@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    int a,b,c,d,e;
+    printf("enter any number\n");
+    scanf("%d",&a);
+    if(a>=1&&a<=999){
+    d=a;
+    b=a%10;
+    a=a/10;
+    c=a%10;
+    a=a/10;
+    e=(b*b*b)+(c*c*c)+(a*a*a);
+    if(d==e){
+        printf("this number is a armstrong number\n");
+    }
+    else {
+        printf("this number is not a armstrong number\n");
+    }
+
+}
+else{
+    printf("invalid input");
+}
+}
